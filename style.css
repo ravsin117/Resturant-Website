@@ -138,17 +138,33 @@ body{
     border:1px solid black ;
     display:flex;
     flex-wrap: wrap;
+    
 }
 .about-img{
     flex:1 1 400px;
     padding:30px;
     border:2px solid red;
+    transform:translateX(150%);
+    animation:about-img-animation 1s ease-in-out forwards;
+}
+@keyframes about-img-animation{
+    100%{
+        transform:translate(0);
+    }
 }
 
 .about-text{
+    border:2px solid green;
     flex:1 1 400px;
     padding:30px;
     margin:auto;
+    transform:translateX(-150%);
+    animation:about-text-animation 1s ease-in-out forwards;
+}
+@keyframes about-text-animation{
+    100%{
+        transform:translate(0);
+    }
 }
 .about-img img{
     display:block;

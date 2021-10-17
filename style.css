@@ -511,6 +511,33 @@ body{
     /* we can add shadow to image boxes also */
     
 }
-
+/* ######################## small screen #######################*/
+@media(max-width:500px){
+    html{
+        font-size:50%;
+    }
+    .testimonial-container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .food-menu-item{
+        flex-direction: column;
+        text-align:center;
+    }
+    .food-menu-container img{
+        margin:auto;
+    }
+    .form-container{
+        width:90%;
+    }
+    .contact-container{
+        display:flex;
+        flex-direction: column;
+    }
+    .contact-img{
+        width:90%;
+        margin:3rem auto;
+    }
+}
 
 

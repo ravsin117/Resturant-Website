@@ -119,8 +119,10 @@ body{
 }
 /* ################# about us styling ########################## */
 #about{
+    border:2px solid red; 
     padding:50px 0px;
     background:#f5f5f7;
+    /* box-sizing: border-box; */
 }
 #about h2{
     font-size:3.2rem;
@@ -138,12 +140,15 @@ body{
     border:1px solid black ;
     display:flex;
     flex-wrap: wrap;
+    width:940px; /* add media queries  for responsive set both w and height 0 for less than 500 */
+    height:440px;
     
 }
 .about-img{
+    border:2px solid black; 
     flex:1 1 400px;
     padding:30px;
-    border:2px solid red;
+    margin:auto; /* i added*/
     transform:translateX(150%);
     animation:about-img-animation 1s ease-in-out forwards;
 }
@@ -167,14 +172,16 @@ body{
     }
 }
 .about-img img{
+    
     display:block;
-    height:400px;
+    height:300px;
     max-width:100%;
     margin:auto ;
     object-fit:cover;
     object-position:right;
 }
 
+/* ###############3333 food section styling */
 
 
 

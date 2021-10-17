@@ -119,10 +119,10 @@ body{
 }
 /* ################# about us styling ########################## */
 #about{
-    /* border:2px solid red;  */
+
     padding:50px 0px;
     background:#f5f5f7;
-    /* box-sizing: border-box; */
+
 }
 #about h2{
     font-size:3.2rem;
@@ -137,18 +137,15 @@ body{
     font-weight:600;
 }
 .about-wrapper{
-    /* border:1px solid black ; */
+
     display:flex;
     flex-wrap: wrap;
-    width:940px; /* add media queries  for responsive set both w and height 0 for less than 500 */
-    height:440px;
     
 }
 .about-img{
     /* border:2px solid black;  */
     flex:1 1 400px;
     padding:30px;
-    margin:auto; /* i added*/
     transform:translateX(150%);
     animation:about-img-animation 1s ease-in-out forwards;
 }
@@ -174,9 +171,9 @@ body{
 .about-img img{
     
     display:block;
-    height:300px;
+    height:400px;
     max-width:100%;
-    margin:auto ; /*added*/
+    margin:auto ;
     object-fit:cover;
     object-position:right;
 }
@@ -184,18 +181,17 @@ body{
 /* ############### food section styling########################*/
 #food{
     box-sizing: border-box;
-    height: 50rem;
     padding:5rem 0 10rem 0;
     /* border:2px solid blue; */
 }
 #food h2{
     /* border:2px solid green; */
-    height:120px;
     text-align:center;
     padding-top:40px;
     font-size: 3rem;
     color: #555;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .food-container{
     display:flex;
@@ -232,7 +228,7 @@ body{
     font-size:1.2rem;
 }
 .img-container::after{
-    content:"hello";
+    content:"";
     display:block;
     position:absolute;
     /* border: 2px solid black; */
@@ -504,7 +500,16 @@ body{
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform:rotate(-45deg)
     }
-
+    /* ################### food category ####################### */
+    .food-container{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .food-type:not(:last-child){
+        margin-bottom:3rem;
+    }
+    /* we can add shadow to image boxes also */
+    
 }
 
 

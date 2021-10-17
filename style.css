@@ -23,6 +23,7 @@ body{
     margin:auto;
     /* border:2px solid red; */
 }
+
 /* ################### Navbar- styling ############################ */
 
 /* for desktop Mode */
@@ -116,6 +117,10 @@ body{
 .btn-primary{
     color:#fff;
     background:#16a083;
+    transition:background 0.2s ease-in;
+}
+.btn-primary:hover{
+    background: #0d6451;
 }
 /* ################# about us styling ########################## */
 #about{
@@ -539,5 +544,10 @@ body{
         margin:3rem auto;
     }
 }
-
+/* #########3333333 LANDSCAPE MODE ############################ */
+@media(orientation: landscape) and (max-height:500px) {
+    .showcase-area{
+        height:50vmax;
+    }
+}
 
